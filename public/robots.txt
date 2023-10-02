@@ -1,0 +1,17 @@
+User-agent: *
+Disallow: /checkout/
+Disallow: /account/
+Disallow: /cart/
+Disallow: /search/
+Disallow: /wishlist/
+Disallow: /compare/
+Disallow: /review/
+Disallow: /login/
+Disallow: /logout/
+Disallow: /admin/
+Disallow: /abrir-mei
+Disallow: /cancelar-mei
+Disallow: /alterar-mei
+Disallow: /parcelar-mei
+Disallow: /declarar-mei
+Sitemap: https://expressmei.com/
