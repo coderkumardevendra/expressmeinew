@@ -37,6 +37,8 @@ const NavBar = () => {
         <div className="logo">
           <img
             src={Logo}
+            width={115}
+            height={20}
             alt="Logo da empresa, um foguete escrito 'Express MEI' ao lado"
             onClick={() => navigate("/")}
             style={{ cursor: "pointer" }}
@@ -70,6 +72,8 @@ const NavBar = () => {
           <div className="logo">
             <img
               src={Logo}
+              width={140}
+              height={24}
               alt="Logo da empresa, um foguete escrito 'Express MEI' ao lado"
               onClick={() => navigate("/")}
               style={{ cursor: "pointer" }}
@@ -89,6 +93,8 @@ const NavBar = () => {
             <div className="logo">
               <img
                 src={Logo}
+                width={140}
+                height={24}
                 alt="Logo da empresa, um foguete escrito 'Express MEI' ao lado"
                 onClick={() => navigate("/")}
                 style={{ cursor: "pointer" }}

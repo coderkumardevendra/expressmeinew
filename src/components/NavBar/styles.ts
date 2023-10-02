@@ -27,6 +27,7 @@ export const NavBarContent = styled.div`
 
     img {
       width: 115px;
+      height:auto;
       margin-right: 0.5rem;
     }
   }
@@ -36,6 +37,7 @@ export const NavBarContent = styled.div`
       font-size: 1rem;
       img {
         width: 120px;
+        height:auto;
       }
     }
 
@@ -117,8 +119,10 @@ export const NavBarMobile = styled.div`
     .logo {
       font-size: 1rem;
       img {
-        width: 140px;
+        width: 100%;
+        hefight:auto;
         margin-right: 0.5rem;
+        aspect-ratio: auto 140 / 24;
       }
     }
   }

@@ -4,7 +4,7 @@ import {
   FooterCopy,
   FooterLink,
 } from "./styles";
-import LogoG from "@/assets/logo-g.png";
+import LogoG from "@/assets/logo-g.webp";
 import FmdGoodOutlinedIcon from "@mui/icons-material/FmdGoodOutlined";
 import PhoneInTalkOutlinedIcon from "@mui/icons-material/PhoneInTalkOutlined";
 import EmailOutlinedIcon from "@mui/icons-material/EmailOutlined";
@@ -14,7 +14,7 @@ const Footer = () => {
     <FooterContainer className="container">
       <FooterContent>
         <div className="footer_logo">
-          <img src={LogoG} alt="Logo G" />
+        <img src={LogoG} width={304} height={101} alt="Logo G" />
         </div>
 
         <div className="footer_paths">

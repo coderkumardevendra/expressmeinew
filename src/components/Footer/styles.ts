@@ -19,10 +19,12 @@ export const FooterContent = styled.div`
 
     img {
       width: 240px;
+      height:auto;
       margin-right: 0.5rem;
 
       @media screen and (max-width: 767px) {
         width: 160px;
+        height:auto;
       }
     }
   }
@@ -30,7 +32,7 @@ export const FooterContent = styled.div`
   .footer_paths,
   .footer_about {
     align-self: flex-start;
-    h3 {
+    h2 {
       font-size: 1.125rem;
       font-weight: 500;
       color: var(--main-blue);
@@ -42,6 +44,7 @@ export const FooterContent = styled.div`
       align-items: center;
       margin-bottom: 0.5rem;
       font-weight: 300;
+      padding: 5px 0;
 
       svg {
         opacity: 0.75;
@@ -52,12 +55,13 @@ export const FooterContent = styled.div`
     @media screen and (max-width: 767px) {
       margin-bottom: 1rem;
 
-      h3 {
+      h2 {
         font-size: 1rem;
       }
 
       li {
-        font-size: 0.75rem;
+        font-size: 0.9rem;
+        padding: 5px 0;
       }
     }
   }
