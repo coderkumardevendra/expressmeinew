@@ -18,7 +18,7 @@ const Footer = () => {
         </div>
 
         <div className="footer_paths">
-          <h3>Nosso Site</h3>
+          <h2>Nosso Site</h3>
 
           <ul>
             <li>
@@ -43,7 +43,7 @@ const Footer = () => {
         </div>
 
         <div className="footer_about">
-          <h3>Fale Conosco</h3>
+          <h2>Fale Conosco</h2>
 
           <ul>
             <li>
