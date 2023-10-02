@@ -79,7 +79,7 @@ const NavBar = () => {
               style={{ cursor: "pointer" }}
             />
           </div>
-          <Button onClick={toggleDrawer(true)}>
+          <Button onClick={toggleDrawer(true)}  aria-label="Bars" >
             <Menu />
           </Button>
         </div>
