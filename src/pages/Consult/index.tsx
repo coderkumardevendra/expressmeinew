@@ -13,7 +13,16 @@ import MettingSuccess from "@/assets/metting-success.webp";
 import ContactUsForm from "@/components/ContactUs";
 import { Helmet } from "react-helmet";
 
+import { useEffect } from 'react';
+import ReactGA from 'react-ga';
+
 export default function ConsultPage() {
+
+  useEffect(() => {
+    ReactGA.pageview(window.location.pathname);
+  },[])
+
+  
   const sendWhatsAppMessage = () => {
     window.open(
       `https://api.whatsapp.com/send?phone=5531973224040&text=Olá, gostaria de uma consultoria!`

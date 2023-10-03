@@ -26,7 +26,16 @@ import ProductDescribe from "@/components/ProductDescribe";
 import DataColectWarning from "@/components/DataColectWarning";
 import Captcha from "@/components/Captcha";
 
+import { useEffect } from 'react';
+import ReactGA from 'react-ga';
+
 export default function InstallmentPage() {
+
+  useEffect(() => {
+    ReactGA.pageview(window.location.pathname);
+  },[])
+
+  
   const [loading, setLoading] = useState(false);
   const [captchaRef, setCaptchaRef] = useState<any>(null);
   const handleCaptchaValidate = (value: boolean) => {

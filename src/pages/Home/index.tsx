@@ -1,4 +1,4 @@
-import React, { lazy, Suspense } from 'react';
+import React, { lazy, Suspense, useEffect } from 'react';
 import NavBar from "@/components/NavBar";
 import {
   AboutContainer,
@@ -16,6 +16,7 @@ import Card from "@/components/Card";
 import SecurityMessage from "@/components/SecurityMessage";
 import { Helmet } from "react-helmet";
 import { LazyLoadImage } from '@tjoskar/react-lazyload-img'
+import ReactGA from 'react-ga';
 
 const Benefits = lazy(() => import('@/components/Benefits'));
 const ContactUsForm = lazy(() => import('@/components/ContactUs'));
@@ -30,6 +31,11 @@ const HomePage = () => {
   const LikeBussinessManSrcSet = `${LikeBussinessMan} 1x, ${LikeBussinessMan.replace('.webp', '.webp')} 2x, ${LikeBussinessMan.replace('.webp', '.webp')} 3x`;
   const imageWidth = 480;
   const imageHeight = 318;
+
+  useEffect(() => {
+    ReactGA.pageview(window.location.pathname);
+  },[])
+  
 
   return (
     <>

@@ -31,7 +31,16 @@ import { NumericFormat } from "react-number-format";
 import Captcha from "@/components/Captcha";
 import validateCPF from "@/utils/validateCpf";
 
+import { useEffect } from 'react';
+import ReactGA from 'react-ga';
+
 export default function OpenPage() {
+
+  useEffect(() => {
+    ReactGA.pageview(window.location.pathname);
+  },[])
+
+
   const [loading, setLoading] = useState(false);
   const [captchaRef, setCaptchaRef] = useState<any>(null);
   const handleCaptchaValidate = (value: boolean) => {

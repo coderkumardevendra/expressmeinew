@@ -1,4 +1,4 @@
-import ScrollToTop from "@/helpers/scrollToTop";
+import React, { lazy, Suspense } from 'react';
 import AlterPage from "@/pages/Alter";
 import CancelPage from "@/pages/Cancel";
 import ConsultPage from "@/pages/Consult";
@@ -11,10 +11,15 @@ import PrivacyPolicyPage from "@/pages/PrivacyPolicy";
 import UseTermsPage from "@/pages/UseTerms";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
+const ScrollToTop = lazy(() => import('@/helpers/scrollToTop'));
+
 export default function AppRoutes() {
   return (
     <BrowserRouter>
+    <Suspense fallback={<div>.</div>}>
       <ScrollToTop />
+    </Suspense>
+    <Suspense fallback={<div>loading</div>}>
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/abrir-mei" element={<OpenPage />} />
@@ -27,6 +32,7 @@ export default function AppRoutes() {
         <Route path="/termos-de-uso" element={<UseTermsPage />} />
         <Route path="/compra/:id" element={<PaymentDetails />} />
       </Routes>
+    </Suspense>
     </BrowserRouter>
   );
 }

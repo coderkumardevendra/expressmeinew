@@ -1,4 +1,7 @@
 import AppRoutes from "./routes";
+import ReactGA from 'react-ga';
+
+ReactGA.initialize('G-4JJS45MKXK');
 
 function App() {
   return (
