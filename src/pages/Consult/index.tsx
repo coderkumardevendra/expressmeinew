@@ -8,7 +8,7 @@ import {
 } from "./styles";
 import { FaWhatsapp } from "react-icons/fa";
 import { MdOutlineEmail } from "react-icons/md";
-import MettingSuccess from "@/assets/metting-success.png";
+import MettingSuccess from "@/assets/metting-success.webp";
 
 import ContactUsForm from "@/components/ContactUs";
 import { Helmet } from "react-helmet";

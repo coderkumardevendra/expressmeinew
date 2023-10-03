@@ -8,7 +8,7 @@ function Benefits() {
     <BenefitsContainer className="container" data-aos="fade-up">
       <BenefitsContent component="div">
         <div className="image">
-          <img src={PadlockImage} alt="Icone de um cadeado fechado" />
+          <img src={PadlockImage} width={30} height={30} alt="Icone de um cadeado fechado" />
         </div>
         <h2>Visibilidade</h2>
         <p>Consiga vender para instituições publicas.</p>
@@ -16,7 +16,7 @@ function Benefits() {
 
       <BenefitsContent component="div">
         <div className="image">
-          <img src={SearchImage} alt="Icone de uma lupa" />
+          <img src={SearchImage} width={30} height={30} alt="Icone de uma lupa" />
         </div>
         <h2>Formalidade</h2>
         <p>Saia da informalidade e tenha mais benefícios.</p>
@@ -24,7 +24,7 @@ function Benefits() {
 
       <BenefitsContent component="div">
         <div className="image">
-          <img src={ShieldImage} alt="Icone de um escudo" />
+          <img src={ShieldImage} width={30} height={30} alt="Icone de um escudo" />
         </div>
         <h2>Exlusividade</h2>
         <p>Obter benefícios exclusivos do governo.</p>

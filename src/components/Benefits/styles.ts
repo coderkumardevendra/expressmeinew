@@ -26,6 +26,11 @@ export const BenefitsContent = styled(Box)`
   align-items: center;
   max-width: 400px;
 
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
   .image {
     background: var(--bg-blue);
     border-radius: 50%;
@@ -34,6 +39,9 @@ export const BenefitsContent = styled(Box)`
     
     img {
       width: 30px;
+      width: 30;
+      height: 30;
+      aspect-ratio: auto 30 / 30;
     }
   }
 

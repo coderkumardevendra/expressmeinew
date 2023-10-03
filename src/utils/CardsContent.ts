@@ -13,8 +13,9 @@ export const CardsContent = [
     image: {
       src: OpenIcon,
       alt: "uma placa azul com a palavra open",
-      width: "35",
-      height: "35",
+      imageWidth: "35",
+      imageHeight: "35",
+      srcSet: `${OpenIcon} 1x, ${OpenIcon.replace('.webp', '.webp')} 2x, ${OpenIcon.replace('.webp', '.webp')} 3x`
     },
     buttonText: "Abrir MEI",
     buttonLink: "/abrir-mei",
@@ -26,8 +27,9 @@ export const CardsContent = [
     image: {
       src: AlterIcon,
       alt: "duas setas formando um circulo",
-      width: "35",
-      height: "35",
+      imageWidth: "35",
+      imageHeight: "35",
+      srcSet: `${AlterIcon} 1x, ${AlterIcon.replace('.webp', '.webp')} 2x, ${AlterIcon.replace('.webp', '.webp')} 3x`
     },
     buttonText: "Alterar MEI",
     buttonLink: "/alterar-mei",
@@ -40,8 +42,9 @@ export const CardsContent = [
     image: {
       src: CancelIcon,
       alt: "uma placa azul com a palavra closed",
-      width: "35",
-      height: "35",
+      imageWidth: "35",
+      imageHeight: "35",
+      srcSet: `${CancelIcon} 1x, ${CancelIcon.replace('.webp', '.webp')} 2x, ${CancelIcon.replace('.webp', '.webp')} 3x`
     },
     imageAlt: "uma placa azul com a palavra closed",
     buttonText: "Cancelar MEI",
@@ -55,8 +58,9 @@ export const CardsContent = [
     image: {
       src: DeclareIcon,
       alt: "uma prancheta azul com a palavra declaration",
-      width: "35",
-      height: "35",
+      imageWidth: "35",
+      imageHeight: "35",
+      srcSet: `${DeclareIcon} 1x, ${DeclareIcon.replace('.webp', '.webp')} 2x, ${DeclareIcon.replace('.webp', '.webp')} 3x`
     },
     buttonText: "Declarar MEI",
     buttonLink: "/declarar-mei",
@@ -68,8 +72,9 @@ export const CardsContent = [
     image: {
       src: ConsultIcon,
       alt: "Duas pessoas conversando sentadas em uma mesa com um computador",
-      width: "35",
-      height: "35",
+      imageWidth: "35",
+      imageHeight: "35",
+      srcSet: `${ConsultIcon} 1x, ${ConsultIcon.replace('.webp', '.webp')} 2x, ${ConsultIcon.replace('.webp', '.webp')} 3x`
     },
     buttonText: "Fazer Consultoria",
     buttonLink: "/consultoria",
@@ -81,8 +86,9 @@ export const CardsContent = [
     image: {
       src: CreditCardIcon,
       alt: "Ìcone de cartão de crédito",
-      width: "35",
-      height: "35",
+      imageWidth: "35",
+      imageHeight: "35",
+      srcSet: `${CreditCardIcon} 1x, ${CreditCardIcon.replace('.webp', '.webp')} 2x, ${CreditCardIcon.replace('.webp', '.webp')} 3x`
     },
     buttonText: "Parcelar MEI",
     buttonLink: "/parcelar-mei",

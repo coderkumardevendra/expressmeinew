@@ -17,6 +17,11 @@ export const CardContainer = styled(Box)`
   text-align: center;
   min-height: 250px;
 
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
   h1 {
     font-size: 1.5rem;
     font-weight: 500;
@@ -30,7 +35,7 @@ export const CardContainer = styled(Box)`
     top: 10px;
     width: 35px;
     height: 35px;
-    object-fit: fill;
+    aspect-ratio: auto 35 / 35;
   }
 
   p {

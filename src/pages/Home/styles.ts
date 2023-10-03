@@ -96,8 +96,8 @@ export const FirstCallContainer = styled.div`
       margin: 1rem auto;
 
       img {
-        width: 300px;
-        height:auto;
+        width: 300px !important;
+        height:auto !important;
       }
     }
   }

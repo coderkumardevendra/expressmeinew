@@ -1,6 +1,4 @@
-import { Button, Divider } from "@mui/material";
-import { Box } from "@mui/system";
-import React from "react";
+import { Button } from "@mui/material";
 import { useNavigate } from "react-router-dom";
 import { CardContainer } from "./styles";
 
@@ -10,7 +8,10 @@ type Props = {
   description: string;
   descriptionContent?: string;
   image: string;
+  imageWidth: string;
+  imageHeight: string;
   imageAlt: string;
+  srcSet:string;
   buttonText: string;
   buttonLink: string;
 };
@@ -22,6 +23,9 @@ export default function Card({
   descriptionContent,
   image,
   imageAlt,
+  imageWidth,
+  imageHeight,
+  srcSet,
   buttonText,
   buttonLink,
 }: Props) {
@@ -38,7 +42,7 @@ export default function Card({
       <p>{descriptionContent}</p>
       <hr></hr>
 
-      <img src={image} alt={imageAlt} />
+      <img src={image} width={imageWidth} height={imageHeight} srcSet={srcSet} alt={imageAlt} />
       <Button onClick={() => navigateTo(buttonLink)} variant="contained" fullWidth>
         {buttonText}
       </Button>
