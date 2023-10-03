@@ -14,13 +14,13 @@ import MettingSuccess from "@/assets/metting-success.webp";
 import LikeBussinessMan from "@/assets/like-bussiness-man.webp";
 import { CardsContent } from "@/utils/CardsContent";
 import Card from "@/components/Card";
-import Benefits from "@/components/Benefits";
 import Warning from "@/components/WarningMessage";
 import SecurityMessage from "@/components/SecurityMessage";
 import WhatsAppCall from "@/components/WhatsAppCall";
 import { Helmet } from "react-helmet";
 import { LazyLoadImage } from '@tjoskar/react-lazyload-img'
 
+const Benefits = lazy(() => import('@/components/Benefits'));
 const ContactUsForm = lazy(() => import('@/components/ContactUs'));
 
 const HomePage = () => {
@@ -94,9 +94,12 @@ const HomePage = () => {
               />
           ))}
           </div>
-
           <SecurityMessage />
         </ServicesContainer>
+
+        <Suspense fallback={<div>Loading...</div>}>
+          <Benefits />
+        </Suspense>
 
         <Benefits />
 
